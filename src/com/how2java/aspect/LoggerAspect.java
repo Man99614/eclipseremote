@@ -12,6 +12,7 @@ public class LoggerAspect {
 		System.out.println("start log:" + joinPoint.getSignature().getName());
 		Object object = joinPoint.proceed();
 		System.out.println("end log:" + joinPoint.getSignature().getName());
+		System.out.println("这是我修改的文件");
 		return object;
 	}
 }
